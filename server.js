@@ -59,9 +59,8 @@ if (process.env.NODE_ENV === "production") {
 //----------------------- Deployment-----------------------
 
 app.use(notFound);     //agr url alg ho to un erro ko handle karne kai liye kar rai
-app.use(errorHandler);
+app.use(errorHandler)
 
-// const PORT = process.env.PORT
 const PORT = process.env.PORT || 5000
 
 const server = app.listen(PORT, console.log(`Server running on PORT ${PORT}`));
