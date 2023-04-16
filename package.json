@@ -1,30 +1,23 @@
 {
-  "name": "mern-chat-app-backend",
+  "name": "mern_chat_app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    
+     "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "build":"echo success"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PanwarAyush/mern-chat-app-backend.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "aayusharma",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PanwarAyush/mern-chat-app-backend/issues"
-  },
-  "homepage": "https://github.com/PanwarAyush/mern-chat-app-backend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.3",
+    "mongoose": "^7.0.2",
     "socket.io": "^4.6.1"
   }
 }
